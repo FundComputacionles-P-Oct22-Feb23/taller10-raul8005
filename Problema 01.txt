@@ -1,0 +1,78 @@
+Problema 01
+
+Miniespecificación:
+
+1.Inicio
+2.funcion principal()
+3.	lado1, d[0-n]
+4.	lado2, d[0-n]
+5.	lado3, d[0-n]
+6.	lado4, d[0-n]
+7.	producto, x(100)[{a-z}, {A-Z}, {BS, *, /, =}]
+8.	opcion, i[0-n]
+9.	<< "Ingrese a para calacular el área de un cuadrado.\n
+10.	Ingrese b para calacular el área de un triangulo.\n
+11.	Ingrese c para calacular el área de un rectángulo."
+12.	>> opcion
+
+13.	Si (opcion == 1) entonces
+14.		<< "Ingrese la medida del primer lado:"
+15.		>> lado1
+16.		<< "Ingrese la medida del segundo lado:"
+17.		>> lado2
+18.		<< "Ingrese la medida del tercer lado:"
+19.		>> lado3
+20.		<< "Ingrese la medida del cuarto lado:"
+21.		>> lado4
+22.		resultado <-- obtenerAreacuadrado(lado1 * lado2 * lado3 * lado4)
+23.		<< resultado
+24.	De lo contario
+25.		Si (opcion == 2) entonces
+26.			base, d[0-n]
+27.			altura, d[0-n]	
+28.			<< "Ingrese la medida de la base:"
+29.			>> base
+30.			<< "Ingrese la medida de la altura:"
+31.			>> altura
+32.			resultado <-- obtenerAreatriangulo(base * altura)
+33.			<< resultado
+34.		De lo contario
+35.			base, d[0-n]
+36.			altura, d[0-n]
+37.			<< "Ingrese la medida de la base:"
+38.			>> base
+38.			<< "Ingrese la medida de la altura:"
+40.			>> altura
+41.			resultado <-- obtenerArearectangulo(base, altura)
+42.			<< resultado	
+43.		Fin Si
+44.	Fin Si
+45.Fin funcion principal
+
+46.funcion obtenerAreaCuadrado(lado1, d; lado2, d; lado3, d; lado4, d;): d
+47.	operacion, d[0-n]<-- 0
+48.	cadena, x(100)[{A-Z}, {a-z}, {BS, *, =}
+49.	operacion <-- lado1 * lado2 * lado3 * lado4
+50.	cadena <-- "El área del cuadrado es: " + lado1 + " * " + lado2 + " * " + 
+51.	lado3 + " * " + lado4 + " = " + operacion
+52.	retornar cadena
+53.Fin funcion obtenerAreacuadrado
+
+54.funcion obtenerAreaTriangulo(base, d; altura, d): d
+55.	operacion, d[0-n]
+56.	cadena, x(100)[{A-Z}, {a-z}, {BS, *, =, /}
+57.	operacion <-- (base * altura)/2
+58.	cadena <-- "El área del triángulo es: ( " + base + " * " + altura + " )/2 = " 
+59.	+ operacion 
+60.	retornar cadeana
+61.Fin funcion obtenerAreatriangulo
+
+62.funcion obtenerArearectangulo(base, d; altura, d): d
+63.	operacion, d[0-n]
+64.	cadena, x(100)[{A-Z}, {a-z}, {BS, *, =}
+65.	operacion <-- base * altura
+66.	cadena <-- "El área del rectángulo es igual a " + base + " * " + altura + " = "
+                 + operacion
+67.	retornar cadena
+68.Fin funcion obtenerArearectangulo
+69.Fin

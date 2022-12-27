@@ -1,0 +1,44 @@
+Problema 02
+
+Miniespecificación:
+
+1. Inicio
+2. funcion principal()
+2.	nota1, d[0-n]
+3.	nota2, d[0-n]
+4.	nota3, d[0-n]
+5.	nota4, d[0-n]
+6.	<< "Ingrese la nota 1:"
+7.   >> nota1
+8.   << "Ingrese la nota 2:"
+9.  >> nota2
+10.  << "Ingrese la nota 3:"
+11.  >> nota3
+12.  << "Ingrese la nota 4:"
+13. >> nota4
+14. resultado, x(100)[{A-Z}, {a-z}, {0-n}, {BS, :}]
+15. resulatdo <-- obtenerNotaCualitativa(nota1, nota2, nota3, nota4)
+16. << resultado
+17. Fin funcion principal
+18. funcion obtenerNotaCualitativa(nota1, d; nota2, d; nota3, d; nota4, d): d 
+19.        promedio, d[0-n]
+20.		promedio <-- (n1 + n2 + n3 + n4)/4
+21.		cadena, x(100)[{A-Z}, {a-z}, {0-n}, {BS, :}]  
+22.	Si promedio >= 0 and promedio <= 5 entonces
+23.		cadena <-- "El promedio de las notas " + nota1 + ", " + nota2 + ", " + nota3                       + ", " + nota4 + " es Regular."
+24.  De lo contario
+25.     Si promedio >= 5.1 and promedio <= 8 entonces
+26.			cadena <-- "El promedio de las notas " + nota1 + ", " + nota2 + ", " + nota3 + ", " + nota4 + " es Bueno."
+27.     De lo contrario
+28.			Si promedio >= 8.1 and promedio <= 9 entonces
+29.				cadena <-- "El promedio de las notas " + nota1 + ", " + nota2 + ", " + nota3 + ", " + nota4 + " es Muy bueno."
+30.			De lo contrario
+31.				Si promedio >= 9.1 and promedio <= 10 entonces
+32.					cadena <-- "El promedio de las notas " + nota1 + ", " + nota2 + ", " + nota3 + ", " + nota4 + " es Sobresaliente." 
+33.				Fin Si
+34.			Fin si
+35.	   Fin Si
+36.  Fin Si
+37. retornar cadena
+38. Fin funcion obtenerNotaCualitativa
+39. Fin
